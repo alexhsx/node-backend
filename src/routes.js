@@ -8,7 +8,7 @@ const BoxController = require("./controllers/BoxController");
 const FileController = require("./controllers/FileController");
 
 
-routes.post("/", (req,res)=>{
+routes.get("/", (req,res)=>{
   return res.send('Inicialized System, Enjoy the back end!')
 });
 routes.post("/boxes", BoxController.store);
